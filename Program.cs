@@ -40,11 +40,11 @@ DataTable GetRainfallStationInfo_DataTable(string fileName)
             }
             if (node.Attributes["name"].Value == "lat")
             {
-                lon = Convert.ToDouble(node.InnerText);
+                lat = Convert.ToDouble(node.InnerText);
             }
             if (node.Attributes["name"].Value == "lon")
             {
-                lat = Convert.ToDouble(node.InnerText);
+                lon = Convert.ToDouble(node.InnerText);
                 break;
             }
         }
